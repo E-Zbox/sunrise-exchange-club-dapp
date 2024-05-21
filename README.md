@@ -52,3 +52,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 </div>
 
 ## Live Version
+
+[Sunrise Exchange Club](https://sunrise-exchange-club-dapp.vercel.app/)
