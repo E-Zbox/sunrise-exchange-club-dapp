@@ -9,12 +9,14 @@ import { PositionContainer } from "../styles/shared/Container.styles";
 import { Loader } from "../styles/Loader.styles";
 // utils
 import { screens } from "@/utils/data";
+import { CardInfoSubTitle } from "../styles/HomePage/ScreenOne.styles";
 
 export default function PrimaryLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [isMobile, setIsMobile] = useState(false);
   const [loading, setLoading] = useState(true);
 
   const {
@@ -26,11 +28,14 @@ export default function PrimaryLayout({
   const { bgColor } = useTheme();
 
   const loadEventListener = () => {
-    console.log("done loading");
     setLoading(false);
   };
 
   useEffect(() => {
+    if (window.innerWidth < 500) {
+      setIsMobile(true);
+      alert("Only supports desktop view");
+    }
     window.addEventListener("load", loadEventListener);
 
     return () => window.removeEventListener("load", loadEventListener);
@@ -38,7 +43,19 @@ export default function PrimaryLayout({
   return (
     <>
       <MainApp>
-        {loading ? (
+        {isMobile ? (
+          <PositionContainer
+            $position="absolute"
+            $top="0px"
+            $left="0px"
+            $height="100vh"
+            $justifyContent="center"
+            $alignItems="center"
+            $bgColor={`${bgColor}AF`}
+          >
+            <CardInfoSubTitle>Switch to a desktop view</CardInfoSubTitle>
+          </PositionContainer>
+        ) : loading ? (
           <PositionContainer
             $position="absolute"
             $top="0px"
