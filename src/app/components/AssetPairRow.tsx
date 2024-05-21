@@ -109,7 +109,7 @@ const AssetPairRow = ({
 
       const backgroundColor = isBullish ? "#0efe0e90" : "#fe0e0e90";
 
-      const data = targetedPairPricesArray.map(({ price }) => price);
+      const data = targetedPairPricesArray.map(({ price }) => price).reverse();
 
       return (
         <>
