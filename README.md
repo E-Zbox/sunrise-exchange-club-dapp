@@ -47,8 +47,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 #### See the price of your favorite crypto powered by Chainlink X Subgraphs
 
 <div align="center">
-    <img width="600" src="./screenshots/two.png" />
-    <img width="600" src="./screenshots/three.png" />
+    <img width="400" src="./screenshots/two.png" />
+    <img width="400" src="./screenshots/three.png" />
 </div>
 
 ## Live Version
