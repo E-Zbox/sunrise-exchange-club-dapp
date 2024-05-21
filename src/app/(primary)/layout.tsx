@@ -46,7 +46,7 @@ export default function PrimaryLayout({
             $height="100%"
             $justifyContent="center"
             $alignItems="center"
-            $bgColor={`${bgColor}7A`}
+            $bgColor={`${bgColor}4A`}
           >
             <Loader $size={"120px"} src={loaderGif.src} alt={""} />
           </PositionContainer>
