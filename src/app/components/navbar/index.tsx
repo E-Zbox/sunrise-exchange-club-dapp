@@ -57,7 +57,7 @@ const Navbar = () => {
               src={theGraphImg.src}
               alt={theGraphImg.src.substring(0, 11)}
             />
-            <MainTitle>Sunrise Club Exchange</MainTitle>
+            <MainTitle>Sunrise Exchange Club</MainTitle>
           </FlexContainer>
           <FlexContainer
             $height="100%"
